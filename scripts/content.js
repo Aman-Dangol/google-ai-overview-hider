@@ -40,10 +40,14 @@ browser.storage.onChanged.addListener((changes, namespace) => {
     removeAiOverview();
   } else {
     const AIcontainer = getAIoverviewContainer();
+    const poepleAskContainer = getPeopleALsoAskContainer();
 
     if (AIcontainer) {
       AIcontainer.style.display = "";
     }
+
+    if (poepleAskContainer)
+      poepleAskContainer.forEach((el) => (el.style.display = ""));
   }
 });
 
