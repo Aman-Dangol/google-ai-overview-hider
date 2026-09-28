@@ -8,7 +8,11 @@
 - Hides Google search's **People also ask** section
 - Toggle button to enable and disable these feature<br>
 
-##
+## **How to use**
+
+- Open a terminal and run ` git clone https://github.com/Aman-Dangol/google-ai-overview-hider.git`
+- Open [Chrome extensions](chrome://extensions/)
+- click on `load unpacked` and select the `google-ai-overview-hider` folder
 
 ### **Note**
 
