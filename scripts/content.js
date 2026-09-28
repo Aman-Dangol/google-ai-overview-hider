@@ -6,12 +6,19 @@ const getAIoverviewContainer = () => {
   return element;
 };
 
+getPeopleALsoAskContainer = () => {
+  const elements = document.querySelectorAll('[jscontroller="Da4hkd"]');
+
+  return elements;
+};
+
 const removeAiOverview = () => {
   const AIcontainer = getAIoverviewContainer();
+  const poepleAskContainer = getPeopleALsoAskContainer();
 
-  if (!AIcontainer) return;
-
-  AIcontainer.style.display = "none";
+  if (AIcontainer) AIcontainer.style.display = "none";
+  if (poepleAskContainer)
+    poepleAskContainer.forEach((el) => (el.style.display = "none"));
 };
 
 chrome.storage.local.get("disableStatus").then((result) => {
