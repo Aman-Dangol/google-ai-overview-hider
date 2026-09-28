@@ -1,0 +1,18 @@
+{
+  "name": "block ai Overview",
+  "description": "disable/remove ai overview section in google search",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "hello.html",
+    "default_icon": "ai-block-icon.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": ["https://www.google.com/search*"]
+    }
+  ]
+}
+

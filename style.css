@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  border: none;
+  font-family: monospace;
+}
+
+body {
+  width: 200px;
+}
+
+h2 {
+  font-weight: bold !important;
+  letter-spacing: 2px;
+}
+
+button {
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 150ms;
+}
+
+button:disabled {
+  background-color: grey !important;
+  cursor: not-allowed;
+}
+
+button:disabled:hover {
+  scale: none;
+}
+
+button:hover {
+  scale: 1.025;
+}
+
+.button-container {
+  display: grid;
+  grid-template-rows: 2;
+  gap: 4px;
+}
+
+button#disable-AI-button {
+  background-color: #228b22cc;
+  color: white;
+}
+
+button#disable-AI-button:hover {
+  background-color: #228b22ee;
+}
+
+button#enable-AI-button {
+  background-color: #ff0000bb;
+  color: white;
+}
+
+button#enable-AI-button:hover {
+  background-color: #ff0000dd;
+}
+
