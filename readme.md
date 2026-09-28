@@ -4,7 +4,7 @@
 
 ## Features
 
-- hides google's main **Ai overview** section
-- hides google's **People also ask** section
-- toggle to enable and disable these feature
+- hides Google's main **Ai overview** section
+- hides Google's **People also ask** section
+- toggle button to enable and disable these feature
 
