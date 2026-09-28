@@ -21,6 +21,15 @@ const removeAiOverview = () => {
     poepleAskContainer.forEach((el) => (el.style.display = "none"));
 };
 
+const addAiOverview = () => {
+  const AIcontainer = getAIoverviewContainer();
+  const poepleAskContainer = getPeopleALsoAskContainer();
+
+  if (AIcontainer) AIcontainer.style.display = "";
+  if (poepleAskContainer)
+    poepleAskContainer.forEach((el) => (el.style.display = ""));
+};
+
 chrome.storage.local.get("disableStatus").then((result) => {
   const disableStatus = result.disableStatus ?? true;
 
@@ -39,15 +48,7 @@ browser.storage.onChanged.addListener((changes, namespace) => {
   if (disableStatus) {
     removeAiOverview();
   } else {
-    const AIcontainer = getAIoverviewContainer();
-    const poepleAskContainer = getPeopleALsoAskContainer();
-
-    if (AIcontainer) {
-      AIcontainer.style.display = "";
-    }
-
-    if (poepleAskContainer)
-      poepleAskContainer.forEach((el) => (el.style.display = ""));
+    addAiOverview();
   }
 });
 
