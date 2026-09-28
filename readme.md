@@ -12,6 +12,7 @@
 
 - Open a terminal and run ` git clone https://github.com/Aman-Dangol/google-ai-overview-hider.git`
 - Open `chrome://extensions` in browser
+- enable `developer mode`
 - click on `load unpacked` and select the `google-ai-overview-hider` folder
 
 ### **Note**
